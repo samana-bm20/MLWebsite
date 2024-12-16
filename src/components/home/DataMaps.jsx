@@ -67,10 +67,10 @@ const CARDS = [
     },
     {
         id: 2,
-        name: "India Historical Administrative Districts",
+        name: "100 Years of India Historical Districts",
         content: (
             <p>
-                All Administrative districts from <Highlight>Census 1931 to 2011</Highlight>, linked to Census
+                All Administrative districts from <Highlight>Census 1911 to 2011</Highlight>, linked to Census
                 demographics, are available for India. District boundaries are updated
                 till <Highlight>January 2024</Highlight>.
             </p>
@@ -95,7 +95,7 @@ const CARDS = [
         content: (
             <p>
                 Includes current parliamentary constituency boundaries with demographic
-                profile and <Highlight>2009, 2014 and 2019 elections</Highlight> results. In addition,
+                profile and <Highlight>2014, 2019 and 2024 elections</Highlight> results. In addition,
                 <Highlight>Pre-1974 constituency</Highlight> boundaries with multiple Lok Sabha elections
                 data are also available.
             </p>

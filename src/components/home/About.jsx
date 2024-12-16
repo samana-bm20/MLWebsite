@@ -23,7 +23,7 @@ const About = () => {
                     <div className="card relative">
                         <div className="text-xl lg:text-3xl font-bold text-gray-600">About</div>
                         <div className="text-3xl lg:text-5xl font-bold text-[#0C315B]"><span className='text-[#b20000]'>ML</span> Infomap</div>
-                        <div className="text-sm lg:text-lg leading-relaxed text-justify pt-2 md:pt-4 xl:pt-6">
+                        <div className="text-sm lg:text-lg leading-normal md:leading-relaxed font-parkinsans text-justify pt-2 md:pt-4 xl:pt-6">
                             ML Infomap is an Information Technology company specializing in GIS solutions, maps, data, and apps.
                             It designs, develops, deploys, and supports spatial solutions, using multiple technologies like
                             Cloud and Mobile, AI Machine Learning, remotely sensed images, spatial analytics, IoT integration,

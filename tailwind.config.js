@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         Candal: ['Candal'],
         Poppins: ['Poppins'],
+        parkinsans: ['Parkinsans', 'sans-serif'],
       },
       screens: {
         '2xl': '1440px', // Adjusting the 2xl breakpoint to 1440px
@@ -29,8 +30,13 @@ module.exports = {
       animation: {
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         float: 'float 2s infinite alternate ease-in-out',
+        marquee: 'marquee 30s linear infinite',
       },
       keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
