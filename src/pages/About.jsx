@@ -29,6 +29,7 @@ const About = () => {
         </div>
       </div>
       <div className='py-4 flex items-center'>
+
         <div className='flex flex-col-reverse md:flex-row justify-center items-center w-[100%]'>
           <img src={Globe} alt="GIS Globe" className="h-[12rem] md:h-[18rem] lg:h-[25rem] rounded-xl object-covers" />
           <div className="px-8 py-2 md:px-10 md:py-4 lg:px-20 lg:py-8">
@@ -36,8 +37,10 @@ const About = () => {
             <p className='text-sm md:text-lg text-justify font-parkinsans'>ML Infomap develops solutions for corporate and government sectors in ESRI ArcGIS and MERN stack. It creates high-quality vector maps, ensuring customers benefit from accurate geocoding, geofencing, linear referencing and routing. ML Infomap focuses on solutions for several verticals like fleet management, digital transformation, infrastructure, defence, agriculture, skilling and healthcare.</p>
           </div>
         </div>
+
       </div>
       <div className='py-4 flex items-center bg-gray-100'>
+
         <div className='flex flex-col md:flex-row justify-center items-center'>
           <div className="px-8 py-2 md:px-10 md:py-4 lg:px-20 lg:py-8">
             <p className='text-lg md:text-4xl font-bold text-[#0C315B] mb-2'><span className="text-[#b20000]">WHAT WE</span> ACHIEVE</p>
@@ -45,6 +48,7 @@ const About = () => {
           </div>
           <img src={Fleet} alt="Fleet" className="h-[10rem] md:h-[15rem] lg:h-[20rem] px-20 rounded-xl object-covers" />
         </div>
+        
       </div>
       <div className='py-4 flex items-center'>
         <div className='flex flex-col-reverse md:flex-row justify-center items-center w-[100%]'>
