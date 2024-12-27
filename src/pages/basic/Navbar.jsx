@@ -6,6 +6,7 @@ import { MenuRounded } from '@mui/icons-material';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [itemSelected, setItemSelected] = useState(0);
     const menuRef = useRef(null);
     const buttonRef = useRef(null);
     const paths = ['/MLWebsite/', '/MLWebsite/about', '/MLWebsite/tech-apps', '/MLWebsite/mapdata', '/MLWebsite/contact'];
@@ -35,13 +36,44 @@ const Navbar = () => {
 
 
             <div className='sticky top-0 z-50 w-full h-[5rem] shadow-xl bg-[#fff]'>
-                <nav className='container ml-auto flex items-center justify-between rounded-xl'>
-                    <div className='py-2'>
+                <nav className='container-fluid ml-auto flex items-center justify-between rounded-xl'>
+                    <div className='py-2 pl-8 md:pl-10 lg:pl-20'>
                         <Link to='/MLWebsite/'>
-                            <img draggable={false} src={lightLogo} alt='ML INFOMAP' className='w-20 h-auto ml-4' />
+                            <img draggable={false} src={lightLogo} alt='ML INFOMAP' className='w-20 h-auto' />
                         </Link>
                     </div>
                     <div className="hidden md:block">
+                        <div className='h-[5rem] w-[40rem flex items-center justify-end mr-10 lg:mr-20'>
+                            <div className='h-full w-full'>
+                                <ul className='h-full flex justify-around items-center lg:gap-8 font-semibold text-md'>
+                                    {paths.map((path, index) => (
+                                        <li
+                                            key={index}
+                                            className="relative px-2 flex items-center justify-center h-full"
+                                        >
+                                            <NavLink
+                                                to={path}
+                                                end={path === "/MLWebsite/"}
+                                                onClick={() => setItemSelected(index)}
+                                                className={({ isActive }) =>
+                                                    `transition-colors duration-300 ${isActive ? "text-[#B20000] font-bold" : "hover:text-[#B20000]"
+                                                    }`
+                                                }
+                                            >
+                                                {titles[index]}
+                                            </NavLink>
+                                            {itemSelected === index && (
+                                            <div className="absolute bottom-0 w-full bg-[#B20000] h-[0.3rem] rounded-t-full"></div>
+                                        )}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* <div className="hidden md:block">
                         <div className='h-[5rem] w-[40rem] bg-gray-300 flex items-center justify-end rounded-bl-[200px] border-l-4 border-l-[#0c315b] shadow-[0_7px_0_#777]'>
                             <div className='px-3 py-2 w-full'>
                                 <ul className='flex justify-around lg:gap-8 font-semibold text-md'>
@@ -63,7 +95,10 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+
+
                     <div className="sm:hidden z-[100] mr-4">
                         <IconButton ref={buttonRef} onClick={toggleMenu}>
                             <MenuRounded fontSize='large' sx={{ color: '#b20000' }} />

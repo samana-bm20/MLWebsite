@@ -1,5 +1,5 @@
 "use client";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { ContainerScroll } from "../ui/tab-scroll";
 import SIDH from '../../assets/Maps/SIDH.JPG'
 import CRIS from '../../assets/Maps/CRIS.JPG'
@@ -51,16 +51,20 @@ export function TabScroll() {
           </>
         }
       >
-        <img
-          src={images[currentImageIndex]}
-          alt={`Slide ${currentImageIndex + 1}`}
-          height={720}
-          width={1400}
-          className={`mx-auto rounded-2xl object-fill h-full object-left-top transition ease-in-out duration-300 ${
-            isFading ? "opacity-0" : "opacity-100"
-          }`}
-          draggable={false}
-        />
+        <div className="relative w-full h-full mx-auto rounded-2xl overflow-hidden">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              height={720}
+              width={1400}
+              className={`absolute top-0 left-0 w-full h-full object-fill transition-opacity duration-1000 ${index === currentImageIndex ? "opacity-100" : "opacity-0"
+                }`}
+              draggable={false}
+            />
+          ))}
+        </div>
         {/* <div
           className={`mx-auto rounded-2xl overflow-hidden relative transition-transform duration-500 ease-in-out transform ${
             isFading ? "translate-x-[100%]" : "translate-x-0"

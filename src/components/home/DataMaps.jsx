@@ -44,7 +44,7 @@ export const Highlight = ({
 const CARDS = [
     {
         id: 0,
-        name: "India National Basemap December 2021",
+        name: "India National Basemap December 2024",
         content: (
             <p>
                 This is a great data set to begin your collection with. The map layers include:
@@ -72,7 +72,7 @@ const CARDS = [
             <p>
                 All Administrative districts from <Highlight>Census 1911 to 2011</Highlight>, linked to Census
                 demographics, are available for India. District boundaries are updated
-                till <Highlight>January 2024</Highlight>.
+                till <Highlight>December 2024</Highlight>.
             </p>
         ),
     },

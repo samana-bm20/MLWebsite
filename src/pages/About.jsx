@@ -39,7 +39,7 @@ const About = () => {
         </div>
 
       </div>
-      <div className='py-4 flex items-center bg-gray-100'>
+      <div className='py-4 flex items-center bg-[#fcebeb]'>
 
         <div className='flex flex-col md:flex-row justify-center items-center'>
           <div className="px-8 py-2 md:px-10 md:py-4 lg:px-20 lg:py-8">
