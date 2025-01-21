@@ -9,8 +9,27 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      'primary': {
+        DEFAULT: '#B20000',
+        light: '#FDF2E9',
+        bg: '#FCF3F3' //fcebeb
+      },
+      'secondary': {
+        DEFAULT: '#0245A3',
+        light: '#F1F7FF',
+      },
+      'contrast': '#333333',
+      'white': '#fff',
+      'gray': {
+        100: '#f5f5f5',
+        300: '#e0e0e0'
+      }
+    },
     extend: {
       fontFamily: {
+        inter: ['Inter'],
+        figtree: ['Figtree'],
         Candal: ['Candal'],
         Poppins: ['Poppins'],
         parkinsans: ['Parkinsans', 'sans-serif'],

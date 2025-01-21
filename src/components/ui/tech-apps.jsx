@@ -53,7 +53,7 @@ export const InfiniteMovingCards = ({
     return (
         <div
             ref={containerRef}
-            className={cn("scroller relative z-20 max-w-full overflow-hidden", className)}
+            className={cn("scroller relative max-w-full overflow-hidden", className)}
         >
             <ul
                 ref={scrollerRef}
@@ -65,32 +65,32 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item) => (
                     <li
-                        className="relative w-[350px] bg-gray-300 border-[2px] border-[#0C315B] max-w-full rounded-2xl flex-shrink-0 px-4 py-3 md:w-[350px] transition duration-300 ease-in-out group overflow-hidden"
+                        className="relative w-[350px] bg-secondary max-w-full rounded-md flex-shrink-0 px-4 py-3 transition duration-300 ease-in-out group overflow-hidden"
                         key={item.name}
                     >
                         <blockquote>
-                            <div className="relative z-20 w-full h-auto mb-4 rounded-md border-[2px] border-black overflow-hidden">
+                            <div className="relative w-full h-auto mb-4 rounded-md overflow-hidden">
                                 <img
                                     src={item.image}
                                     alt={`${item.name} - ${item.title}`}
                                     className="w-full h-[160px] object-cover"
                                 />
                             </div>
-                            <div className="relative z-20 mt-6 grid gap-1 text-center">
-                                <div className="text-sm text-[#0C315B] font-bold">
+                            <div className="relative mt-2 grid gap-1 text-center">
+                                {/* <div className="text-sm text-[#0C315B] font-bold">
                                     {item.name}
-                                </div>
-                                <div className="text-xl text-[#B20000] font-bold">
+                                </div> */}
+                                <div className="text-base md:text-lg text-white font-inter font-semibold leading-tight">
                                     {item.title}
                                 </div>
                             </div>
                         </blockquote>
-                        <div className="absolute inset-0 bg-[#0C315B] flex items-center justify-center transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 z-[999] bg-opacity-90">
+                        <div className="absolute inset-0 bg-primary flex items-center justify-center transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-opacity-90">
                             <div className="flex flex-col items-center">
                                 {/* <div className="text-white font-bold mb-2">
                                     More Information
                                 </div> */}
-                                <button className="text-white font-bold py-2 px-4 border border-white rounded hover:bg-gray-300 hover:text-[#B20000] transition">
+                                <button className="text-white font-bold font-inter py-2 px-4 border border-white rounded hover:bg-white  hover:text-primary transition">
                                     Know More
                                 </button>
                             </div>

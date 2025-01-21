@@ -7,12 +7,16 @@ const theme = createTheme({
         light: "#FDF2E9" 
       },
       secondary: {
-        main: "#848688", 
+        main: "#0245A3", 
+        light: '#F1F7FF',
       },
       
       tertiary: {
         main: "#335b86", 
       },
+    },
+    typography: {
+      fontFamily: "'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif",
     },
   });
 

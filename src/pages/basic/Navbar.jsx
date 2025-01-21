@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import lightLogo from '../../assets/logo.jpg';
 import { IconButton } from '@mui/material';
 import { MenuRounded } from '@mui/icons-material';
 
 const Navbar = () => {
+    const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [itemSelected, setItemSelected] = useState(0);
     const menuRef = useRef(null);
@@ -16,6 +17,12 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen)
         console.log(!isMenuOpen);
     };
+
+    useEffect(() => {
+        // Synchronize itemSelected with the current URL
+        const currentIndex = paths.findIndex((path) => path === location.pathname);
+        setItemSelected(currentIndex);
+    }, [location.pathname, paths]);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -56,7 +63,7 @@ const Navbar = () => {
                                                 end={path === "/MLWebsite/"}
                                                 onClick={() => setItemSelected(index)}
                                                 className={({ isActive }) =>
-                                                    `transition-colors duration-300 ${isActive ? "text-[#B20000] font-bold" : "hover:text-[#B20000]"
+                                                    `transition-colors duration-300 text-contrast font-inter font-semibold ${isActive ? "text-primary font-bold" : "hover:text-primary"
                                                     }`
                                                 }
                                             >

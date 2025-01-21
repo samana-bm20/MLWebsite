@@ -1,14 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { ContainerScroll } from "../ui/tab-scroll";
-import SIDH from '../../assets/Maps/SIDH.JPG'
-import CRIS from '../../assets/Maps/CRIS.JPG'
-import MSSDS from '../../assets/Maps/MSSDS.JPG'
-import IOCL from '../../assets/Maps/IOCL.JPG'
-import RouteGIF from '../../assets/Location Map.mp4'
+import SIDH from "../../assets/Maps/SIDH.JPG";
+import CRIS from "../../assets/Maps/CRIS.JPG";
+import MSSDS from "../../assets/Maps/MSSDS.JPG";
+import IOCL from "../../assets/Maps/IOCL.JPG";
+import RouteGIF from "../../assets/Location Map.mp4";
 
 const images = [SIDH, CRIS, MSSDS, IOCL];
-
 
 export function TabScroll() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -42,9 +41,10 @@ export function TabScroll() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-xl md:text-3xl font-semibold text-black mb-0 lg:mb-4">
-              Experience the ease of <span className="text-[#b20000]">ROUTES</span> with <br />
-              <span className="text-3xl md:text-6xl font-bold mt-1 leading-none">
+            <h1 className="text-lg md:text-2xl text-contrast font-semibold text-black my-4 lg:mb-8 lg:mt-0 font-inter">
+              Experience the ease of{" "}
+              <span className="text-primary">ROUTES</span> with <br />
+              <span className="text-2xl md:text-4xl font-bold mt-1 leading-none">
                 ML Maps
               </span>
             </h1>
@@ -59,8 +59,9 @@ export function TabScroll() {
               alt={`Slide ${index + 1}`}
               height={720}
               width={1400}
-              className={`absolute top-0 left-0 w-full h-full object-fill transition-opacity duration-1000 ${index === currentImageIndex ? "opacity-100" : "opacity-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-fill transition-opacity duration-1000 ${
+                index === currentImageIndex ? "opacity-100" : "opacity-0"
+              }`}
               draggable={false}
             />
           ))}
@@ -84,7 +85,6 @@ export function TabScroll() {
     </div>
   );
 }
-
 
 // export function TabScroll() {
 //   return (

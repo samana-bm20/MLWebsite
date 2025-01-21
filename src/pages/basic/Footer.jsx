@@ -31,7 +31,7 @@ const Footer = () => {
 
 
   return (
-    <footer className='bg-[#0C315B] flex-grow'>
+    <footer className='bg-secondary flex-grow'>
       <div className='container mx-auto px-3 py-10'>
         <div className='grid gap-y-6 md:gap-6 grid-cols-1 md:grid-cols-4 xl:grid-cols-12'>
           <div className='col-span-2 xl:col-span-4'>
@@ -39,14 +39,14 @@ const Footer = () => {
               src={logo}
               alt=''
               className='w-10 max-w-full h-auto rounded-lg' />
-            <p className='text-sm text-white text-justify font-parkinsans mt-5'>
+            <p className='text-sm text-white text-justify font-inter mt-5'>
               ML Infomap is an Information Technology company specialising in GIS solutions, maps,
               data and apps. 
             </p>
           </div>
           <div className='col-span-2 xl:col-span-2'>
-            <h2 className='text-[#e84343] font-bold text-xl'>QUICK LINKS</h2>
-            <ul className='mt-4 ml-3 text-sm font-parkinsans'>
+            <h2 className='text-white font-bold text-xl'>QUICK LINKS</h2>
+            <ul className='mt-4 ml-3 text-sm font-inter'>
               <li className='mb-2'>
                 <NavLink to='/'>Home</NavLink>
               </li>
@@ -59,22 +59,22 @@ const Footer = () => {
             </ul>
           </div>
           <div className='col-span-2 xl:col-span-3'>
-            <h2 className='text-[#e84343] font-bold text-xl'>QUICK CONTACT</h2>
+            <h2 className='text-white font-bold text-xl'>QUICK CONTACT</h2>
             <ul className='my-4 text-sm'>
               <li className='mb-3 flex gap-2'>
                 <LocationOnRounded className='w-6 h-6 text-gray-300' />
-                <p className='text-white font-parkinsans'>
+                <p className='text-white font-inter'>
                   124-A, Katwaria Sarai,
                   New Delhi-16, India
                 </p>
               </li>
               <li className='mb-3 flex gap-2'>
                 <PhoneRounded className='w-5 h-5 text-gray-300' />
-                <a href='tel:+91-954-021-7076' className=' font-parkinsans text-white'>+91 011 41688592 / 93</a>
+                <a href='tel:+91-954-021-7076' className=' font-inter text-white'>+91 011 41688592 / 93</a>
               </li>
               <li className='mb-3 flex gap-2'>
                 <MailRounded className='w-5 h-5 text-gray-300' />
-                <a href='mailto:info@cremeborne.com' className=' font-parkinsans text-white'> post@mlinfomap.com</a>
+                <a href='mailto:info@cremeborne.com' className=' font-inter text-white'> post@mlinfomap.com</a>
               </li>
             </ul>
 
@@ -82,7 +82,7 @@ const Footer = () => {
           <div className='col-span-2 xl:col-span-3'>
             <form className='font-light'>
               {/* onSubmit={handleSubmit} */}
-              <label htmlFor='subscribe' className='text-[#e84343] font-bold text-xl'>MOBILE APPS</label>
+              <label htmlFor='subscribe' className='text-white font-bold text-xl'>MOBILE APPS</label>
               {/* <div className='w-full sm:w-fit flex text-sm 2xl:text-lg rounded-md overflow-hidden mt-4'>
                 <input type='email' placeholder='Email Address'
                   value={email}
@@ -130,7 +130,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='container mx-auto border-t border-white px-5 md:px-0'>
-        <p className='text-center text-base text-xs text-gray-300 font-parkinsans py-4 text-white'>Copyright © 2025 All Rights Reserved | © 1993-2025 ML Infomap.
+        <p className='text-center text-xs font-inter py-4 text-white'>Copyright © 2025 All Rights Reserved | © 1993-2025 ML Infomap.
           {/* <a href='https://macverin.com' target="_blank" rel='noreferrer' className='font-bold'>Macverin Technologies</a> */}
         </p>
       </div>

@@ -2,25 +2,25 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "../ui/tech-apps";
-import sidhImage from '../../assets/Maps/SIDH.png';
-import nightRoute from '../../assets/nightRoute.jpg';
-import GapAnalysisNSDC from '../../assets/gap-analysis-nsdc.png';
-import VtsUsecase from '../../assets/VTS-usecase.png';
-import Satellite from '../../assets/immunization-satellite.png';
-
-
-
+import sidhImage from "../../assets/Maps/SIDH.png";
+import nightRoute from "../../assets/nightRoute.jpg";
+import GapAnalysisNSDC from "../../assets/gap-analysis-nsdc.png";
+import VtsUsecase from "../../assets/VTS-usecase.png";
+import Satellite from "../../assets/immunization-satellite.png";
 
 export function TechApps() {
   return (
-    (<div
-      className="h-[33rem] rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden pt-2 md:pt-8">
+    <div className="h-[33rem] rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden pt-2 md:pt-8">
       <div className="flex flex-col items-center">
-        <div className='text-xl md:text-2xl lg:text-3xl font-bold text-gray-600'>Use cases in</div>
-        <div className='text-3xl md:text-4xl lg:text-6xl font-bold text-[#0C315B] pb-6'><span className="text-[#b20000]">GIS</span> Solutions</div>
+        <div className="text-primary font-semibold text-lg md:text-2xl font-inter">
+          Use Cases in
+        </div>
+        <div className="text-contrast text-2xl md:text-4xl font-semibold font-inter pb-6">
+          GIS Solutions
+        </div>
       </div>
       <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
-    </div>)
+    </div>
   );
 }
 

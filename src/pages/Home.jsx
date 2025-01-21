@@ -18,7 +18,7 @@ const Home = () => {
           className='w-full'
           height={100} />
       </div> */}
-      <div className="px-8 md:px-10 lg:px-20 py-5 lg:py-10 flex justify-center bg-gray-300">
+      <div className="px-8 md:px-10 lg:px-20 py-5 lg:py-10 flex justify-center bg-primary-bg">
         <About />
         {/* <Skeleton
           sx={{ bgcolor: '#e59090' }}
@@ -27,7 +27,7 @@ const Home = () => {
           height={300} /> */}
       </div>
       <TechApps />
-      <div className="mt-6 flex justify-center bg-gray-300">
+      <div className="mt-6 flex justify-center bg-primary-bg">
         <DataMaps />
         {/* <Skeleton
           sx={{ bgcolor: '#e59090' }}
