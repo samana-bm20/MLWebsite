@@ -7,7 +7,7 @@ const MapData = () => {
   return (
     <>
       <div className="w-full h-[17rem] md:h-[25rem] overflow-hidden">
-        <img src={MapsHeader} alt="Maps Header" />
+        <img src={MapsHeader} alt="Maps Header" className="w-full"/>
       </div>
       <div className="px-8 md:px-10 lg:px-20 py-5 lg:py-20 flex justify-center bg-white">
         <MapDataInfo />

@@ -85,12 +85,12 @@ export const InfiniteMovingCards = ({
                                 </div>
                             </div>
                         </blockquote>
-                        <div className="absolute inset-0 bg-primary flex items-center justify-center transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-opacity-90">
+                        <div className="absolute inset-0 bg-contrast bg-opacity-50 flex items-center justify-center transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 ">
                             <div className="flex flex-col items-center">
                                 {/* <div className="text-white font-bold mb-2">
                                     More Information
                                 </div> */}
-                                <button className="text-white font-bold font-inter py-2 px-4 border border-white rounded hover:bg-white  hover:text-primary transition">
+                                <button className="text-primary bg-primary-light font-bold font-inter py-2 px-4 border border-primary rounded hover:bg-primary  hover:text-white transition">
                                     Know More
                                 </button>
                             </div>

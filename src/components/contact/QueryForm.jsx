@@ -3,7 +3,7 @@ import { TextField, Button } from '@mui/material'
 
 const QueryForm = () => {
     return (
-        <div className='m-20 p-4 rounded-md'>
+        <div className='p-5 md:p-10 rounded-md bg-white shadow-custom'>
             {/* <p className='text-4xl font-bold text-[#b20000]'>Query Form</p> */}
             <div className="form">
                 <div className="py-4 grid grid-cols-2 gap-4">
@@ -12,7 +12,7 @@ const QueryForm = () => {
                             label="First Name"
                             id="outlined-size-small"
                             size="small"
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>
@@ -21,7 +21,7 @@ const QueryForm = () => {
                             label="Last Name"
                             id="outlined-size-small"
                             size="small"
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>
@@ -32,7 +32,7 @@ const QueryForm = () => {
                             label="Company Name"
                             id="outlined-size-small"
                             size="small"
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>
@@ -43,7 +43,7 @@ const QueryForm = () => {
                             label="Email"
                             id="outlined-size-small"
                             size="small"
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>
@@ -52,7 +52,7 @@ const QueryForm = () => {
                             label="Contact"
                             id="outlined-size-small"
                             size="small"
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>
@@ -64,7 +64,7 @@ const QueryForm = () => {
                             label="Message"
                             multiline
                             rows={4}
-                            color="tertiary"
+                            color="secondary"
                             fullWidth
                         />
                     </div>

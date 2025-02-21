@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { ContainerScroll } from "../ui/tab-scroll";
 import SIDH from "../../assets/Maps/SIDH.JPG";
-import CRIS from "../../assets/Maps/CRIS.JPG";
+import MarketsIndia from "../../assets/Maps/MarketsIndia.JPG";
 import MSSDS from "../../assets/Maps/MSSDS.JPG";
 import IOCL from "../../assets/Maps/IOCL.JPG";
 import RouteGIF from "../../assets/Location Map.mp4";
 
-const images = [SIDH, CRIS, MSSDS, IOCL];
+const images = [SIDH, MarketsIndia, IOCL, MSSDS];
 
 export function TabScroll() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

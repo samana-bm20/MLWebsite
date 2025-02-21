@@ -3,10 +3,10 @@
 import React from "react";
 import { InfiniteMovingCards } from "../ui/tech-apps";
 import sidhImage from "../../assets/Maps/SIDH.png";
-import nightRoute from "../../assets/nightRoute.jpg";
-import GapAnalysisNSDC from "../../assets/gap-analysis-nsdc.png";
-import VtsUsecase from "../../assets/VTS-usecase.png";
-import Satellite from "../../assets/immunization-satellite.png";
+import MarketsIndia from "../../assets/Maps/MarketsIndia.JPG";
+import GapAnalysisNSDC from "../../assets/Maps/gap-analysis-nsdc.png";
+import VtsUsecase from "../../assets/Maps/VTS-usecase.png";
+import Satellite from "../../assets/Maps/immunization-satellite.png";
 
 export function TechApps() {
   return (
@@ -26,7 +26,7 @@ export function TechApps() {
 
 const testimonials = [
   {
-    image: sidhImage,
+    image: GapAnalysisNSDC,
     name: "PROBLEM SOLVING WITH GEOSPATIAL TECHNOLOGY",
     title: "The Skills India Digital Project",
   },
@@ -36,7 +36,7 @@ const testimonials = [
     title: "Geospatial Technology For Safe Movement of LPG",
   },
   {
-    image: GapAnalysisNSDC,
+    image: MarketsIndia,
     name: "GEOSPATIAL APP FOR MARKET DISCOVERY",
     title: "Markets India",
   },
@@ -46,7 +46,7 @@ const testimonials = [
     title: "Immunization Coverage & Vaccine Consumption In Rural India",
   },
   {
-    image: nightRoute,
+    image: sidhImage,
     name: "URBAN LOCAL BODIES USE GEO APP FOR WASTE COLLECTION",
     title: "Swachh Nagar Engineer App",
   },

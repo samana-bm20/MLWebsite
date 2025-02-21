@@ -3,7 +3,6 @@ import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 import RouteMap from '../../assets/route-map.svg';
-import DarkRoute from '../../assets/route.png';
 import HomeHeader from '../../assets/Home/HomeHeader.png'
 
 export const MaskContainer = ({

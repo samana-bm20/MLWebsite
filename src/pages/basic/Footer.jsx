@@ -48,13 +48,16 @@ const Footer = () => {
             <h2 className='text-white font-bold text-xl'>QUICK LINKS</h2>
             <ul className='mt-4 ml-3 text-sm font-inter'>
               <li className='mb-2'>
-                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/MLWebsite/'>Home</NavLink>
               </li>
               <li className='mb-2'>
-                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/MLWebsite/about'>About</NavLink>
               </li>
               <li className='mb-2'>
-                <NavLink to='/tech-apps'>Tech & Apps</NavLink>
+                <NavLink to='/MLWebsite/tech-apps'>Tech & Apps</NavLink>
+              </li>
+              <li className='mb-2'>
+                <NavLink to='/MLWebsite/mapdata'>Data & Maps</NavLink>
               </li>
             </ul>
           </div>
@@ -70,11 +73,11 @@ const Footer = () => {
               </li>
               <li className='mb-3 flex gap-2'>
                 <PhoneRounded className='w-5 h-5 text-gray-300' />
-                <a href='tel:+91-954-021-7076' className=' font-inter text-white'>+91 011 41688592 / 93</a>
+                <a href='tel:+911141688592' className=' font-inter text-white'>+91 011 41688592 / 93</a>
               </li>
               <li className='mb-3 flex gap-2'>
                 <MailRounded className='w-5 h-5 text-gray-300' />
-                <a href='mailto:info@cremeborne.com' className=' font-inter text-white'> post@mlinfomap.com</a>
+                <a href='mailto:post@mlinfomap.com' className=' font-inter text-white'> post@mlinfomap.com</a>
               </li>
             </ul>
 

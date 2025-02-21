@@ -5,13 +5,13 @@ import AboutUs from '../components/about/AboutUs'
 import MissionVision from '../components/about/MissionVision'
 import SuccessNumbers from '../components/about/SuccessNumbers'
 import OurSuccess from '../components/about/OurSuccess'
-import Clients from '../components/about/Clients'
+import Certification from '../components/about/Certification'
 
 const About = () => {
   return (
     <div>
       <div className='w-full h-[17rem] md:h-[25rem] overflow-hidden'>
-        <img src={AboutHeader} alt="About Header" />
+        <img src={AboutHeader} alt="About Header" className="w-full" />
       </div>
       <div className="px-8 md:px-10 lg:px-20 py-5 lg:py-20 flex justify-center bg-white">
         <AboutUs />
@@ -33,7 +33,7 @@ const About = () => {
       <div className="px-8 md:px-10 lg:px-20 py-5 lg:py-20 flex justify-center bg-white">
         <OurSuccess />
       </div>
-      <Clients />
+      <Certification />
     </div>
   )
 }

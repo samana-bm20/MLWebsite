@@ -3,14 +3,14 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
+      {/* <div className="flex flex-col justify-center items-center">
         <p className="text-primary font-semibold text-lg md:text-2xl font-inter">
           About Us
         </p>
         <p className="text-contrast text-2xl md:text-4xl font-semibold font-inter">
           ML Infomap
         </p>
-      </div>
+      </div> */}
       <p className="text-contrast text-sm md:text-lg font-inter tracking-wide my-5">
         We are a Geospatial Technology, Data and GIS Company, established in{" "}
         <span className="text-primary font-semibold">
